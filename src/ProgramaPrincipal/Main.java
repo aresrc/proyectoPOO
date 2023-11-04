@@ -1,0 +1,13 @@
+
+package ProgramaPrincipal;
+import static Archivo.ArchivoPacientes.*;
+
+public class Main {
+    public static void main(String[] args){
+        CrearArchivo("archivo\\InformacionPacientes.txt");
+        EscribirArchivo("archivo\\InformacionPacientes.txt","hola");
+    }
+    
+    
+    
+}
