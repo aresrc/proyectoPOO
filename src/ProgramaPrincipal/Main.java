@@ -8,6 +8,7 @@ public class Main {
         EscribirArchivo("archivo\\InformacionPacientes.txt","hola");
         System.out.println("HolaMundo");
         System.out.println("NuevoCommit");
+        System.out.println("Nuevas Ramas");
     }
     
     
