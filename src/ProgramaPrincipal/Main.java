@@ -8,7 +8,7 @@ public class Main {
         EscribirArchivo("archivo\\InformacionPacientes.txt","hola");
         System.out.println("HolaMundo");
         //Vamos a realizr una modificación en el codigo
-        System.out.println("Lo cambie por ser racista") //Nueva modificacion;
+        System.out.println("Lo cambie por ser racista"); //Nueva modificacion;
     }
     
     
