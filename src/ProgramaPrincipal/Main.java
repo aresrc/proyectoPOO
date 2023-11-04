@@ -10,7 +10,4 @@ public class Main {
         //Vamos a realizr una modificación en el codigo
         System.out.println("Lo cambie por ser racista"); //Nueva modificacion;
     }
-    
-    
-    
 }
