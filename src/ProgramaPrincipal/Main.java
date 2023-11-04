@@ -7,6 +7,8 @@ public class Main {
         CrearArchivo("archivo\\InformacionPacientes.txt");
         EscribirArchivo("archivo\\InformacionPacientes.txt","hola");
         System.out.println("HolaMundo");
+        //Vamos a realizr una modificación en el codigo
+        System.out.println("Nuevo Mundo"); //La modificación
     }
     
     
