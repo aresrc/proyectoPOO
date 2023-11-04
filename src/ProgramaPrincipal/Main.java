@@ -7,6 +7,7 @@ public class Main {
         CrearArchivo("archivo\\InformacionPacientes.txt");
         EscribirArchivo("archivo\\InformacionPacientes.txt","hola");
         System.out.println("HolaMundo");
+        System.out.println("NuevoCommit");
     }
     
     
