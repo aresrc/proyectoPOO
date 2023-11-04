@@ -6,11 +6,9 @@ import java.util.List;
 public class AlmacenamientoDatos<T> {
     private String nombreArchivo;
 
-    public AlmacenamientoDatos(){
-        this.nombreArchivo="C:\\Users\\Andrés Ordóñez\\Documents\\DatosDelPrograma\\pacientes.dat";
-    }
+    
     public AlmacenamientoDatos(String nombreArchivo) {
-        this.nombreArchivo = nombreArchivo;
+        this.nombreArchivo = "\\Archivo\\"+nombreArchivo;
     }
 
     public void guardar(List<T> datos) {
