@@ -1,4 +1,4 @@
-
+//hola
 package ProgramaPrincipal;
 import static Archivo.ArchivoPacientes.*;
 
