@@ -1,4 +1,4 @@
-package ClasePadre;
+package Archivo;
 
 import java.io.*;
 import java.util.List;
@@ -8,7 +8,7 @@ public class AlmacenamientoDatos<T> {
 
     
     public AlmacenamientoDatos(String nombreArchivo) {
-        this.nombreArchivo = "\\Archivo\\"+nombreArchivo;
+        this.nombreArchivo = "src\\Archivo\\"+nombreArchivo;
     }
 
     public void guardar(List<T> datos) {
