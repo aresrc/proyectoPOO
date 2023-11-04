@@ -35,7 +35,6 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         background = new javax.swing.JPanel();
-        jlblLogo = new javax.swing.JLabel();
         jlblSesion = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jtxtUsuario = new javax.swing.JTextField();
@@ -44,6 +43,7 @@ public class Login extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jpwdContraseña = new javax.swing.JPasswordField();
         jbtnEntrar = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAutoRequestFocus(false);
@@ -53,11 +53,6 @@ public class Login extends javax.swing.JFrame {
         background.setBackground(new java.awt.Color(255, 255, 255));
         background.setPreferredSize(new java.awt.Dimension(440, 560));
         background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jlblLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jlblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/LogoClinicTest (3).png"))); // NOI18N
-        jlblLogo.setText("jLabel1");
-        background.add(jlblLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 260, 260));
 
         jlblSesion.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
         jlblSesion.setText("INICIAR SESION");
@@ -100,11 +95,16 @@ public class Login extends javax.swing.JFrame {
         });
         background.add(jbtnEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 510, -1, -1));
 
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Andrés Ordóñez\\Documents\\NetBeansProjects\\ProyectoPOOG2\\src\\Imagenes\\LogoClinicTest (3).png")); // NOI18N
+        jLabel3.setToolTipText("");
+        background.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 320, 290));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(background, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,17 +123,6 @@ public class Login extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jbtnEntrarActionPerformed
 
-    private void jtxtUsuarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtxtUsuarioMousePressed
-        if (jtxtUsuario.getText().equals("Ingrese su nombre de usuario")) {
-            jtxtUsuario.setText("");
-            jtxtUsuario.setForeground(Color.black);
-        }
-        if (String.valueOf(jpwdContraseña.getPassword()).isEmpty()) {
-            jpwdContraseña.setText("********");
-            jpwdContraseña.setForeground(Color.gray);
-        }
-    }//GEN-LAST:event_jtxtUsuarioMousePressed
-
     private void jpwdContraseñaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpwdContraseñaMousePressed
         if (String.valueOf(jpwdContraseña.getPassword()).equals("********")) {
             jpwdContraseña.setText("");
@@ -144,6 +133,17 @@ public class Login extends javax.swing.JFrame {
             jtxtUsuario.setForeground(Color.gray);
         }
     }//GEN-LAST:event_jpwdContraseñaMousePressed
+
+    private void jtxtUsuarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtxtUsuarioMousePressed
+        if (jtxtUsuario.getText().equals("Ingrese su nombre de usuario")) {
+            jtxtUsuario.setText("");
+            jtxtUsuario.setForeground(Color.black);
+        }
+        if (String.valueOf(jpwdContraseña.getPassword()).isEmpty()) {
+            jpwdContraseña.setText("********");
+            jpwdContraseña.setForeground(Color.gray);
+        }
+    }//GEN-LAST:event_jtxtUsuarioMousePressed
 
     /**
      * @param args the command line arguments
@@ -184,10 +184,10 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel background;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JButton jbtnEntrar;
     private javax.swing.JLabel jlblContraseña;
-    private javax.swing.JLabel jlblLogo;
     private javax.swing.JLabel jlblSesion;
     private javax.swing.JPasswordField jpwdContraseña;
     private javax.swing.JSeparator jsptrUsuario;
