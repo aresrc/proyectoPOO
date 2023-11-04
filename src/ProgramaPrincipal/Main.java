@@ -9,6 +9,6 @@ public class Main {
         System.out.println("HolaMundo");
         //Vamos a realizr una modificación en el codigo
         System.out.println("Lo cambie por ser racista"); //Nueva modificacion;
-        System.out.println("Hola de nuevo");//cambio nuevo
+        System.out.println("Hola de nuevo");//no es un cambio nuevo
     }
 }
