@@ -40,6 +40,7 @@ public class Pantalla extends javax.swing.JFrame {
         contenido = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -59,7 +60,7 @@ public class Pantalla extends javax.swing.JFrame {
                 btnInformeActionPerformed(evt);
             }
         });
-        jPanel1.add(btnInforme, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 260, 100));
+        jPanel1.add(btnInforme, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 260, 80));
 
         btnRegistroPaciente.setBackground(new java.awt.Color(204, 255, 204));
         btnRegistroPaciente.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -69,7 +70,7 @@ public class Pantalla extends javax.swing.JFrame {
                 btnRegistroPacienteActionPerformed(evt);
             }
         });
-        jPanel1.add(btnRegistroPaciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 260, 100));
+        jPanel1.add(btnRegistroPaciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 260, 80));
 
         btnListaMedicos.setBackground(new java.awt.Color(204, 255, 204));
         btnListaMedicos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -79,7 +80,7 @@ public class Pantalla extends javax.swing.JFrame {
                 btnListaMedicosActionPerformed(evt);
             }
         });
-        jPanel1.add(btnListaMedicos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 260, 100));
+        jPanel1.add(btnListaMedicos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 260, 80));
 
         btnListaPacientes.setBackground(new java.awt.Color(204, 255, 204));
         btnListaPacientes.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -89,7 +90,7 @@ public class Pantalla extends javax.swing.JFrame {
                 btnListaPacientesActionPerformed(evt);
             }
         });
-        jPanel1.add(btnListaPacientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 260, 100));
+        jPanel1.add(btnListaPacientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 260, 80));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pantalla.jpg"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 40, 490, 500));
@@ -141,6 +142,16 @@ public class Pantalla extends javax.swing.JFrame {
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 510, 1100, 30));
 
+        jButton1.setBackground(new java.awt.Color(204, 255, 204));
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton1.setText("Registrar Médico");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 260, 80));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 540));
 
         pack();
@@ -166,6 +177,10 @@ public class Pantalla extends javax.swing.JFrame {
         RegistroPaciente reg = new RegistroPaciente();
         MostrarPanel(reg);
     }//GEN-LAST:event_btnRegistroPacienteActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -208,6 +223,7 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JButton btnListaPacientes;
     private javax.swing.JButton btnRegistroPaciente;
     private javax.swing.JPanel contenido;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
