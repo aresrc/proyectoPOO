@@ -31,9 +31,9 @@ public class RegistrarMedico extends javax.swing.JPanel {
         S10 = new javax.swing.JLabel();
         S11 = new javax.swing.JLabel();
         S12 = new javax.swing.JLabel();
-        Nombre2 = new javax.swing.JTextField();
-        Sexo2 = new javax.swing.JTextField();
-        Edad2 = new javax.swing.JTextField();
+        codigo = new javax.swing.JTextField();
+        grado = new javax.swing.JTextField();
+        exp = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -130,52 +130,52 @@ public class RegistrarMedico extends javax.swing.JPanel {
         S12.setText("Años de experiencia");
         add(S12, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, -1, -1));
 
-        Nombre2.setForeground(new java.awt.Color(204, 204, 204));
-        Nombre2.setText("cmp");
-        Nombre2.setToolTipText("");
-        Nombre2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        Nombre2.addMouseListener(new java.awt.event.MouseAdapter() {
+        codigo.setForeground(new java.awt.Color(204, 204, 204));
+        codigo.setText("cmp");
+        codigo.setToolTipText("");
+        codigo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        codigo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Nombre2MouseClicked(evt);
+                codigoMouseClicked(evt);
             }
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                Nombre2MousePressed(evt);
+                codigoMousePressed(evt);
             }
         });
-        Nombre2.addActionListener(new java.awt.event.ActionListener() {
+        codigo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Nombre2ActionPerformed(evt);
+                codigoActionPerformed(evt);
             }
         });
-        add(Nombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 130, 220, 30));
+        add(codigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 130, 220, 30));
 
-        Sexo2.setForeground(new java.awt.Color(204, 204, 204));
-        Sexo2.setText("grado");
-        Sexo2.addMouseListener(new java.awt.event.MouseAdapter() {
+        grado.setForeground(new java.awt.Color(204, 204, 204));
+        grado.setText("grado");
+        grado.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                Sexo2MousePressed(evt);
+                gradoMousePressed(evt);
             }
         });
-        Sexo2.addActionListener(new java.awt.event.ActionListener() {
+        grado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Sexo2ActionPerformed(evt);
+                gradoActionPerformed(evt);
             }
         });
-        add(Sexo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 300, 220, 30));
+        add(grado, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 300, 220, 30));
 
-        Edad2.setForeground(new java.awt.Color(204, 204, 204));
-        Edad2.setText("exp");
-        Edad2.addMouseListener(new java.awt.event.MouseAdapter() {
+        exp.setForeground(new java.awt.Color(204, 204, 204));
+        exp.setText("exp");
+        exp.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                Edad2MousePressed(evt);
+                expMousePressed(evt);
             }
         });
-        Edad2.addActionListener(new java.awt.event.ActionListener() {
+        exp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Edad2ActionPerformed(evt);
+                expActionPerformed(evt);
             }
         });
-        add(Edad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 220, 220, 30));
+        add(exp, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 220, 220, 30));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -197,7 +197,7 @@ public class RegistrarMedico extends javax.swing.JPanel {
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 33, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/medico.jpg"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 0, 260, 400));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 0, 250, 400));
     }// </editor-fold>//GEN-END:initComponents
 
     private void NombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NombreMouseClicked
@@ -248,41 +248,48 @@ public class RegistrarMedico extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_EdadActionPerformed
 
-    private void Nombre2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Nombre2MouseClicked
+    private void codigoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_codigoMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_Nombre2MouseClicked
+    }//GEN-LAST:event_codigoMouseClicked
 
-    private void Nombre2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Nombre2MousePressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Nombre2MousePressed
+    private void codigoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_codigoMousePressed
+        if(codigo.getText().equals("cmp")){
+            codigo.setText("");
+            codigo.setForeground(Color.black);
+        }
+    }//GEN-LAST:event_codigoMousePressed
 
-    private void Nombre2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Nombre2ActionPerformed
+    private void codigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_codigoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Nombre2ActionPerformed
+    }//GEN-LAST:event_codigoActionPerformed
 
-    private void Sexo2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Sexo2MousePressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Sexo2MousePressed
+    private void gradoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gradoMousePressed
+        if(grado.getText().equals("grado")){
+            grado.setText("");
+            grado.setForeground(Color.black);
+        }
+    }//GEN-LAST:event_gradoMousePressed
 
-    private void Sexo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sexo2ActionPerformed
+    private void gradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gradoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Sexo2ActionPerformed
+    }//GEN-LAST:event_gradoActionPerformed
 
-    private void Edad2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Edad2MousePressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Edad2MousePressed
+    private void expMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_expMousePressed
+        if(exp.getText().equals("exp")){
+            exp.setText("");
+            exp.setForeground(Color.black);
+        }
+    }//GEN-LAST:event_expMousePressed
 
-    private void Edad2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Edad2ActionPerformed
+    private void expActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Edad2ActionPerformed
+    }//GEN-LAST:event_expActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField DNI;
     private javax.swing.JTextField Edad;
-    private javax.swing.JTextField Edad2;
     private javax.swing.JTextField Nombre;
-    private javax.swing.JTextField Nombre2;
     private javax.swing.JLabel S1;
     private javax.swing.JLabel S10;
     private javax.swing.JLabel S11;
@@ -291,7 +298,9 @@ public class RegistrarMedico extends javax.swing.JPanel {
     private javax.swing.JLabel S3;
     private javax.swing.JLabel S4;
     private javax.swing.JTextField Sexo;
-    private javax.swing.JTextField Sexo2;
+    private javax.swing.JTextField codigo;
+    private javax.swing.JTextField exp;
+    private javax.swing.JTextField grado;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
