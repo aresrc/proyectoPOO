@@ -172,7 +172,7 @@ public class ExamenInicial extends javax.swing.JPanel {
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
         Pantalla p = new Pantalla();
-        Cardiologo card = new Cardiologo();
+        ExamenCardiologo card = new ExamenCardiologo();
         MostrarPanel(card);
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
