@@ -7,9 +7,10 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import javax.swing.JPanel;
 import static InterfazGrafica.Pantalla.*;
+import javax.swing.SwingUtilities;
 
 public class RegistroPaciente extends javax.swing.JPanel {
-
+    Pantalla p;
     
     public RegistroPaciente() {
         initComponents();
@@ -198,9 +199,10 @@ public class RegistroPaciente extends javax.swing.JPanel {
     }//GEN-LAST:event_EdadActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        ExamenInicial ex = new ExamenInicial();
-        MostrarPanel(ex);
-        
+        InicioDeExamen ini = new InicioDeExamen();
+        Pantalla p = (Pantalla) SwingUtilities.getWindowAncestor(this);
+        p.dispose();
+        ini.setVisible(true);       
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
