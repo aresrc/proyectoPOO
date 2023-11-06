@@ -40,7 +40,7 @@ public class Pantalla extends javax.swing.JFrame {
         contenido = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        btnRegistroMedico = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -142,15 +142,15 @@ public class Pantalla extends javax.swing.JFrame {
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 510, 1100, 30));
 
-        jButton1.setBackground(new java.awt.Color(204, 255, 204));
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("Registrar Médico");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnRegistroMedico.setBackground(new java.awt.Color(204, 255, 204));
+        btnRegistroMedico.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnRegistroMedico.setText("Registrar Médico");
+        btnRegistroMedico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnRegistroMedicoActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 260, 80));
+        jPanel1.add(btnRegistroMedico, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 260, 80));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 540));
 
@@ -178,9 +178,10 @@ public class Pantalla extends javax.swing.JFrame {
         MostrarPanel(reg);
     }//GEN-LAST:event_btnRegistroPacienteActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btnRegistroMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroMedicoActionPerformed
+        RegistrarMedico regmed = new RegistrarMedico();
+        MostrarPanel(regmed);
+    }//GEN-LAST:event_btnRegistroMedicoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -221,9 +222,9 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JButton btnInforme;
     private javax.swing.JButton btnListaMedicos;
     private javax.swing.JButton btnListaPacientes;
+    private javax.swing.JButton btnRegistroMedico;
     private javax.swing.JButton btnRegistroPaciente;
     private javax.swing.JPanel contenido;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
