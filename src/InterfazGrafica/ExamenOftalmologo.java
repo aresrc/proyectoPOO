@@ -5,6 +5,8 @@
  */
 package InterfazGrafica;
 
+import java.awt.Color;
+
 /**
  *
  * @author admin
