@@ -16,10 +16,7 @@ public class Medico extends Persona {
         this.experiencia = experiencia;
         this.gradoFormacion = gradoFormacion;
     }
-    
-    
-    
-    
+       
     
 
     @Override
