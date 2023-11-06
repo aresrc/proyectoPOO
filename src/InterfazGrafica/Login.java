@@ -70,6 +70,11 @@ public class Login extends javax.swing.JFrame {
                 jtxtUsuarioMousePressed(evt);
             }
         });
+        jtxtUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtxtUsuarioActionPerformed(evt);
+            }
+        });
         background.add(jtxtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 300, 30));
         background.add(jsptrUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, 330, 10));
 
@@ -96,7 +101,7 @@ public class Login extends javax.swing.JFrame {
         background.add(jbtnEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 510, -1, -1));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Andrés Ordóñez\\Documents\\NetBeansProjects\\ProyectoPOOG2\\src\\Imagenes\\LogoClinicTest (3).png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/LogoClinicTest (3).png"))); // NOI18N
         jLabel3.setToolTipText("");
         background.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 320, 290));
 
@@ -144,6 +149,10 @@ public class Login extends javax.swing.JFrame {
             jpwdContraseña.setForeground(Color.gray);
         }
     }//GEN-LAST:event_jtxtUsuarioMousePressed
+
+    private void jtxtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtxtUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
