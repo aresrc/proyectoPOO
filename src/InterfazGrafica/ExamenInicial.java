@@ -115,7 +115,9 @@ public class ExamenInicial extends javax.swing.JPanel {
         add(Altura2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 330, 30));
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 840, 10));
+        jPanel1.setForeground(new java.awt.Color(0, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 380, 840, 20));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ListaInicial.jpg"))); // NOI18N
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 0, 320, 400));
