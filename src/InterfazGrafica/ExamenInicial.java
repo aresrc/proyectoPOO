@@ -30,7 +30,6 @@ public class ExamenInicial extends javax.swing.JPanel {
         S5 = new javax.swing.JLabel();
         Altura1 = new javax.swing.JTextField();
         Altura2 = new javax.swing.JTextField();
-        btnSiguiente = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -115,16 +114,6 @@ public class ExamenInicial extends javax.swing.JPanel {
         });
         add(Altura2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 330, 30));
 
-        btnSiguiente.setBackground(new java.awt.Color(0, 204, 51));
-        btnSiguiente.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnSiguiente.setText("Siguiente");
-        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSiguienteActionPerformed(evt);
-            }
-        });
-        add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 340, 130, 30));
-
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 840, 10));
 
@@ -170,12 +159,6 @@ public class ExamenInicial extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_Altura2ActionPerformed
 
-    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
-        Pantalla p = new Pantalla();
-        ExamenCardiologo card = new ExamenCardiologo();
-        MostrarPanel(card);
-    }//GEN-LAST:event_btnSiguienteActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Alergia;
@@ -186,7 +169,6 @@ public class ExamenInicial extends javax.swing.JPanel {
     private javax.swing.JLabel S3;
     private javax.swing.JLabel S4;
     private javax.swing.JLabel S5;
-    private javax.swing.JButton btnSiguiente;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
