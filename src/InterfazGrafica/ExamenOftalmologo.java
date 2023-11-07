@@ -38,7 +38,6 @@ public class ExamenOftalmologo extends javax.swing.JPanel {
         Estereopsis = new javax.swing.JTextField();
         PresionOcular = new javax.swing.JTextField();
         Refraccion = new javax.swing.JTextField();
-        btnSiguiente = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         S4 = new javax.swing.JLabel();
 
@@ -125,16 +124,6 @@ public class ExamenOftalmologo extends javax.swing.JPanel {
         });
         jPanel1.add(Refraccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, 330, 30));
 
-        btnSiguiente.setBackground(new java.awt.Color(0, 204, 51));
-        btnSiguiente.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnSiguiente.setText("Siguiente");
-        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSiguienteActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 360, 130, 30));
-
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/oftalmologo.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 0, 300, 400));
 
@@ -193,10 +182,6 @@ public class ExamenOftalmologo extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_RefraccionActionPerformed
 
-    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
-
-    }//GEN-LAST:event_btnSiguienteActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField AgudezaVisual;
@@ -208,7 +193,6 @@ public class ExamenOftalmologo extends javax.swing.JPanel {
     private javax.swing.JLabel S3;
     private javax.swing.JLabel S4;
     private javax.swing.JLabel Titulo;
-    private javax.swing.JButton btnSiguiente;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
