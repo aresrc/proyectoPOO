@@ -138,7 +138,8 @@ public class ExamenCardiologo extends javax.swing.JPanel {
         contenido.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 0, 310, 400));
 
         jPanel1.setBackground(new java.awt.Color(255, 0, 0));
-        contenido.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 840, 10));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        contenido.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 380, 840, 20));
 
         add(contenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 400));
     }// </editor-fold>//GEN-END:initComponents
