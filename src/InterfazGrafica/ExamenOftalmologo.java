@@ -40,6 +40,7 @@ public class ExamenOftalmologo extends javax.swing.JPanel {
         Refraccion = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         S4 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -131,6 +132,10 @@ public class ExamenOftalmologo extends javax.swing.JPanel {
         S4.setText("Agudeza Visual");
         jPanel1.add(S4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 120, -1));
 
+        jPanel2.setBackground(new java.awt.Color(204, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 380, 840, 20));
+
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 400));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -195,5 +200,6 @@ public class ExamenOftalmologo extends javax.swing.JPanel {
     private javax.swing.JLabel Titulo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
