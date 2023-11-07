@@ -140,7 +140,8 @@ public class ExamenNeumologo extends javax.swing.JPanel {
         contenido.add(BPM, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 210, 330, 30));
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 255));
-        contenido.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 840, 10));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        contenido.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 380, 840, 20));
         contenido.add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, -1, -1));
         contenido.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 160, -1, -1));
         contenido.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 160, -1, -1));
