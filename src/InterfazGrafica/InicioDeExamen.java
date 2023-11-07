@@ -36,8 +36,8 @@ public class InicioDeExamen extends javax.swing.JFrame {
         contenido = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnatras = new javax.swing.JButton();
+        btnsiguiente = new javax.swing.JButton();
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setText("Recopilación de observaciones");
@@ -67,18 +67,38 @@ public class InicioDeExamen extends javax.swing.JFrame {
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton1.setText("ATRAS");
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 50));
+        btnatras.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnatras.setText("ATRAS");
+        btnatras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnatrasActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnatras, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 50));
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton2.setText("SIGUIENTE");
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 420, 50));
+        btnsiguiente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnsiguiente.setText("SIGUIENTE");
+        btnsiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnsiguienteActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnsiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 420, 50));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 460, 840, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnsiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsiguienteActionPerformed
+        CardLayout cardLayout = (CardLayout) contenido.getLayout();
+        cardLayout.next(contenido); // Muestra el siguiente panel
+    }//GEN-LAST:event_btnsiguienteActionPerformed
+
+    private void btnatrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnatrasActionPerformed
+        CardLayout cardLayout = (CardLayout) contenido.getLayout();
+        cardLayout.previous(contenido); // Muestra el panel anterior
+    }//GEN-LAST:event_btnatrasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -116,9 +136,9 @@ public class InicioDeExamen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnatras;
+    private javax.swing.JButton btnsiguiente;
     private javax.swing.JPanel contenido;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
