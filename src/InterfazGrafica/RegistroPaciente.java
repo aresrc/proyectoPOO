@@ -17,15 +17,6 @@ public class RegistroPaciente extends javax.swing.JPanel {
     }
     
     
-     public void MostrarPanel(JPanel p){
-        p.setSize(840, 400);
-        p.setLocation(0, 0);
-        
-        contenido.removeAll();
-        contenido.add(p, BorderLayout.CENTER);
-        contenido.revalidate();
-        contenido.repaint();
-    }
      
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
