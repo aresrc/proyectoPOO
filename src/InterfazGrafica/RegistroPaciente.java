@@ -193,6 +193,7 @@ public class RegistroPaciente extends javax.swing.JPanel {
         InicioDeExamen ini = new InicioDeExamen();
         Pantalla p = (Pantalla) SwingUtilities.getWindowAncestor(this);
         p.dispose();
+        ini.setSize(840,510);
         ini.setVisible(true);       
     }//GEN-LAST:event_jButton1ActionPerformed
 
