@@ -31,7 +31,6 @@ public class ExamenCardiologo extends javax.swing.JPanel {
         Troponina = new javax.swing.JTextField();
         Diastolica = new javax.swing.JTextField();
         BPM = new javax.swing.JTextField();
-        btnSiguiente = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
 
@@ -135,16 +134,6 @@ public class ExamenCardiologo extends javax.swing.JPanel {
         });
         contenido.add(BPM, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 330, 30));
 
-        btnSiguiente.setBackground(new java.awt.Color(0, 204, 51));
-        btnSiguiente.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnSiguiente.setText("Siguiente");
-        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSiguienteActionPerformed(evt);
-            }
-        });
-        contenido.add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 340, 130, 30));
-
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cardiologists.jpg"))); // NOI18N
         contenido.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 0, 310, 400));
 
@@ -202,10 +191,6 @@ public class ExamenCardiologo extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_BPMActionPerformed
 
-    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSiguienteActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField BPM;
@@ -216,7 +201,6 @@ public class ExamenCardiologo extends javax.swing.JPanel {
     private javax.swing.JTextField Sistolica;
     private javax.swing.JLabel Titulo;
     private javax.swing.JTextField Troponina;
-    private javax.swing.JButton btnSiguiente;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel6;
