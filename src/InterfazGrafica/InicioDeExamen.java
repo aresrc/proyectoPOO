@@ -18,7 +18,7 @@ public class InicioDeExamen extends javax.swing.JFrame {
         ExamenOftalmologo oft = new ExamenOftalmologo();
         
         
-        
+        contenido.setSize(840,400);
         CardLayout cardLayout = new CardLayout();
         contenido.setLayout(cardLayout);
         contenido.add(card,"panel1");
@@ -59,7 +59,7 @@ public class InicioDeExamen extends javax.swing.JFrame {
         contenido.setBackground(new java.awt.Color(255, 255, 255));
         contenido.setPreferredSize(new java.awt.Dimension(840, 400));
         contenido.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(contenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 840, 370));
+        getContentPane().add(contenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 840, 370));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel4.setText("Recopilación de observaciones");
@@ -91,13 +91,17 @@ public class InicioDeExamen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnsiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsiguienteActionPerformed
+        
         CardLayout cardLayout = (CardLayout) contenido.getLayout();
         cardLayout.next(contenido); // Muestra el siguiente panel
+        contenido.setSize(840,400);
     }//GEN-LAST:event_btnsiguienteActionPerformed
 
     private void btnatrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnatrasActionPerformed
+        
         CardLayout cardLayout = (CardLayout) contenido.getLayout();
         cardLayout.previous(contenido); // Muestra el panel anterior
+        contenido.setSize(840,400);
     }//GEN-LAST:event_btnatrasActionPerformed
 
     /**
