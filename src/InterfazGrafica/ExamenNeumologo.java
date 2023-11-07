@@ -31,7 +31,6 @@ public class ExamenNeumologo extends javax.swing.JPanel {
         Troponina = new javax.swing.JTextField();
         Diastolica = new javax.swing.JTextField();
         BPM = new javax.swing.JTextField();
-        btnSiguiente = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         panel1 = new java.awt.Panel();
         jLabel2 = new javax.swing.JLabel();
@@ -140,16 +139,6 @@ public class ExamenNeumologo extends javax.swing.JPanel {
         });
         contenido.add(BPM, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 210, 330, 30));
 
-        btnSiguiente.setBackground(new java.awt.Color(0, 204, 51));
-        btnSiguiente.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnSiguiente.setText("Siguiente");
-        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSiguienteActionPerformed(evt);
-            }
-        });
-        contenido.add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 340, 130, 30));
-
         jPanel1.setBackground(new java.awt.Color(0, 204, 255));
         contenido.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 840, 10));
         contenido.add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, -1, -1));
@@ -228,10 +217,6 @@ public class ExamenNeumologo extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_BPMActionPerformed
 
-    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSiguienteActionPerformed
-
     private void BPM1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BPM1MousePressed
         // TODO add your handling code here:
     }//GEN-LAST:event_BPM1MousePressed
@@ -251,7 +236,6 @@ public class ExamenNeumologo extends javax.swing.JPanel {
     private javax.swing.JTextField Sistolica;
     private javax.swing.JLabel Titulo;
     private javax.swing.JTextField Troponina;
-    private javax.swing.JButton btnSiguiente;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
