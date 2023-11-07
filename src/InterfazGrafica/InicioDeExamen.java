@@ -19,16 +19,13 @@ public class InicioDeExamen extends javax.swing.JFrame {
         contenido.revalidate();
         contenido.repaint();
     }
-    ExamenCardiologo card = new ExamenCardiologo();
-    
-    
-
+    //ExamenCardiologo card = new ExamenCardiologo();
     
     public InicioDeExamen() {
         initComponents();
-        CardLayout cardLayout = new CardLayout();
+       /* CardLayout cardLayout = new CardLayout();
         contenido.setLayout(cardLayout);
-        contenido.add(card,"p1");
+        contenido.add(card,"p1");*/
     }
 
     
@@ -47,7 +44,12 @@ public class InicioDeExamen extends javax.swing.JFrame {
         Altura1 = new javax.swing.JTextField();
         Altura2 = new javax.swing.JTextField();
         btnSiguiente = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        btnsiguiente = new javax.swing.JButton();
+        btnatras = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setName("contenedorprincipal"); // NOI18N
@@ -143,10 +145,37 @@ public class InicioDeExamen extends javax.swing.JFrame {
         });
         contenido.add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 340, 130, 30));
 
+        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
+        contenido.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 840, 10));
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ListaInicial.jpg"))); // NOI18N
         contenido.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 0, 320, 400));
 
-        getContentPane().add(contenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 830, 400));
+        getContentPane().add(contenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 840, 400));
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 204));
+        jPanel2.setLayout(null);
+
+        btnsiguiente.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnsiguiente.setText("SIGUIENTE");
+        btnsiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnsiguienteActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnsiguiente);
+        btnsiguiente.setBounds(420, 0, 420, 50);
+
+        btnatras.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnatras.setText("ATRAS");
+        jPanel2.add(btnatras);
+        btnatras.setBounds(0, 0, 420, 50);
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 460, 840, 50));
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel3.setText("Recopilación de observaciones");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, 380, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -190,9 +219,13 @@ public class InicioDeExamen extends javax.swing.JFrame {
     }//GEN-LAST:event_Altura2ActionPerformed
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
-        CardLayout cardLayout = (CardLayout) contenido.getLayout();
-        cardLayout.show(contenido, "p1");      
+        ExamenCardiologo card = new ExamenCardiologo();
+        MostrarPanel(card);
     }//GEN-LAST:event_btnSiguienteActionPerformed
+
+    private void btnsiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsiguienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnsiguienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -242,8 +275,13 @@ public class InicioDeExamen extends javax.swing.JFrame {
     private javax.swing.JLabel S4;
     private javax.swing.JLabel S5;
     private javax.swing.JButton btnSiguiente;
+    private javax.swing.JButton btnatras;
+    private javax.swing.JButton btnsiguiente;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
