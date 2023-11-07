@@ -124,13 +124,14 @@ public class RegistroPaciente extends javax.swing.JPanel {
         });
         contenido.add(Edad, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 330, 30));
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton1.setText("Iniciar Examen");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        contenido.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 340, -1, -1));
+        contenido.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 340, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/paciente.png"))); // NOI18N
         contenido.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 4, 310, 400));
