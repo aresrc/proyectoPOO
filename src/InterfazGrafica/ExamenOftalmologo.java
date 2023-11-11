@@ -199,7 +199,7 @@ public class ExamenOftalmologo extends javax.swing.JPanel {
     private javax.swing.JTextField Estereopsis;
     private javax.swing.JTextField PresionOcular;
     private javax.swing.JTextField Refraccion;
-    private javax.swing.JButton Resultados;
+    public javax.swing.JButton Resultados;
     private javax.swing.JLabel S1;
     private javax.swing.JLabel S2;
     private javax.swing.JLabel S3;
