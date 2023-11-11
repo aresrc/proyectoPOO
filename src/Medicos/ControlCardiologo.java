@@ -1,9 +1,9 @@
 
 
-
+/*
 package Medicos;
 
-import InterfazGrafica.Resultados;
+import InterfazGrafica.ResultadoCardiologia;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 public class ControlCardiologo implements ActionListener {
     
     
-    private Resultados ventanaR;
+    private ResultadoCardiologia ventanaR;
     private Cardiologo card;
 
     @Override
@@ -19,10 +19,11 @@ public class ControlCardiologo implements ActionListener {
         ventanaR.CajaTexto.setText(card.MostrarResultados());
     }
     
-    public ControlCardiologo(Resultados ventana, Cardiologo cardiologo){
+    public ControlCardiologo(ResultadoCardiologia ventana, Cardiologo cardiologo){
         this.ventanaR = ventana;
         this.card = cardiologo;
         this.ventanaR.Resultados.addActionListener(this);
     }
     
 }
+*/
