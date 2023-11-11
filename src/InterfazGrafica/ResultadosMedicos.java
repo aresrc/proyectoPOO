@@ -32,6 +32,8 @@ public class ResultadosMedicos extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         btnatras = new javax.swing.JButton();
         btnsiguiente = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -64,6 +66,14 @@ public class ResultadosMedicos extends javax.swing.JFrame {
         jPanel1.add(btnsiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 0, 260, 70));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 740, 500, 70));
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setText("Datos del paciente");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 500, 120));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -120,6 +130,8 @@ public class ResultadosMedicos extends javax.swing.JFrame {
     private javax.swing.JButton btnsiguiente;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
