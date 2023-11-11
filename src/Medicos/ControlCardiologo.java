@@ -1,29 +1,32 @@
 
 
-/*
+
 package Medicos;
 
-import InterfazGrafica.ResultadoCardiologia;
+import InterfazGrafica.ExamenOftalmologo;
+import InterfazGrafica.ResultCardiologia;
+import InterfazGrafica.RegistroPaciente;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+import Medicos.Cardiologo;
 
 public class ControlCardiologo implements ActionListener {
     
     
-    private ResultadoCardiologia ventanaR;
+    private ExamenOftalmologo ventanaF;
+    private ResultCardiologia ventanaCard;
     private Cardiologo card;
 
     @Override
     public void actionPerformed(ActionEvent e) { 
-        ventanaR.CajaTexto.setText(card.MostrarResultados());
+        ventanaCard.CajaTextoCard.setText(card.MostrarResultados());
     }
     
-    public ControlCardiologo(ResultadoCardiologia ventana, Cardiologo cardiologo){
-        this.ventanaR = ventana;
+    public ControlCardiologo(ExamenOftalmologo ventana, Cardiologo cardiologo){
+        this.ventanaF = ventana;
         this.card = cardiologo;
-        this.ventanaR.Resultados.addActionListener(this);
+        this.ventanaF.Resultados.addActionListener(this);
     }
     
 }
-*/
+
