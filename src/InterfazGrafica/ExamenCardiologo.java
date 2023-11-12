@@ -194,14 +194,14 @@ public class ExamenCardiologo extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField BPM;
-    private javax.swing.JTextField Diastolica;
+    public javax.swing.JTextField BPM;
+    public javax.swing.JTextField Diastolica;
     private javax.swing.JLabel S1;
     private javax.swing.JLabel S2;
     private javax.swing.JLabel S3;
-    private javax.swing.JTextField Sistolica;
+    public javax.swing.JTextField Sistolica;
     private javax.swing.JLabel Titulo;
-    private javax.swing.JTextField Troponina;
+    public javax.swing.JTextField Troponina;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel6;
