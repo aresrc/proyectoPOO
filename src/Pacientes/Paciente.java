@@ -10,6 +10,10 @@ public class Paciente extends Persona{
     private String gruposanguineo;
     private String alergia;
     
+    public Paciente() {
+        
+    }
+    
     public Paciente(String nombre, String sexo, int edad, int DNI, double peso, double altura, String gruposanguineo, String alergia) {
         super(nombre, sexo, edad, DNI);
         this.peso = peso;
