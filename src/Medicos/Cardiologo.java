@@ -10,6 +10,9 @@ public class Cardiologo extends Medico{
     public Cardiologo(String nombre, String sexo, int edad, int DNI, int CMP, int experiencia, String gradoFormacion) {
         super(nombre, sexo, edad, DNI, CMP, experiencia, gradoFormacion);
     }
+    public Cardiologo(){
+        
+    }
 
     public int getCMP() {
         return CMP;
@@ -77,7 +80,39 @@ public class Cardiologo extends Medico{
    
     int presionSistolica, presionDiastolica, frecuenciaCardiaca;
     double nivelTroponina;
-    
+
+    public int getPresionSistolica() {
+        return presionSistolica;
+    }
+
+    public void setPresionSistolica(int presionSistolica) {
+        this.presionSistolica = presionSistolica;
+    }
+
+    public int getPresionDiastolica() {
+        return presionDiastolica;
+    }
+
+    public void setPresionDiastolica(int presionDiastolica) {
+        this.presionDiastolica = presionDiastolica;
+    }
+
+    public int getFrecuenciaCardiaca() {
+        return frecuenciaCardiaca;
+    }
+
+    public void setFrecuenciaCardiaca(int frecuenciaCardiaca) {
+        this.frecuenciaCardiaca = frecuenciaCardiaca;
+    }
+
+    public double getNivelTroponina() {
+        return nivelTroponina;
+    }
+
+    public void setNivelTroponina(double nivelTroponina) {
+        this.nivelTroponina = nivelTroponina;
+    }
+  
     public void MedirPresionArterial() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Presión arterial sistólica: ");
