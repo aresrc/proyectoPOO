@@ -195,7 +195,14 @@ public class RegistroPaciente extends javax.swing.JPanel {
         Pantalla p = (Pantalla) SwingUtilities.getWindowAncestor(this);
         p.dispose();
         ini.setSize(840,510);
-        ini.setVisible(true);       
+        ini.setVisible(true); 
+        
+        Paciente paciente = new Paciente();
+        ExamenInicial exi = new ExamenInicial();
+        paciente.setAltura(Double.parseDouble(exi.Altura.getText()));
+        paciente.setPeso(Double.parseDouble(exi.Peso.getText()));
+        paciente.setGruposanguineo(exi.Altura.getText());
+        paciente.setAlergia(exi.Altura.getText());
     }//GEN-LAST:event_IniciarExamenActionPerformed
 
 
