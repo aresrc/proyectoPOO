@@ -1,16 +1,28 @@
 
 package ProgramaPrincipal;
 import static Archivo.ArchivoPacientes.*;
+import InterfazGrafica.ExamenOftalmologo;
+import InterfazGrafica.Login;
+import InterfazGrafica.ResultadosMedicos;
+import Medicos.Cardiologo;
+import Medicos.ControlCardiologo;
+import Pacientes.Paciente;
 
 public class Main {
     public static void main(String[] args){
-        CrearArchivo("archivo\\InformacionPacientes.txt");
-        EscribirArchivo("archivo\\InformacionPacientes.txt","hola");
-        System.out.println("HolaDios");
-        //Vamos a realizr una modificación en el codigo
-        System.out.println("Lo cambie por ser racista"); //Nueva modificacion;
-        System.out.println("Hola de nuevo");//no es un cambio nuevo
-        System.out.println("Cambio por Jesus");//el era el racista
-        System.out.println("Hola que tal");
+        Paciente paciente = new Paciente();
+        Login log = new Login();
+        log.setVisible(true);
+        
+        ExamenOftalmologo res = new ExamenOftalmologo();
+        Cardiologo card = new Cardiologo();
+        ControlCardiologo control = new ControlCardiologo(res, card);
+        res.setVisible(true);
+        
+       /*
+        VentanaResultados ventanaR = new VentanaResultados();
+        Cardiologo card = new Cardiologo();
+        ControlCardiologo control = new ControlCardiologo(ventanaR, card);
+        ventanaR.setVisible(true);*/
     }
 }
