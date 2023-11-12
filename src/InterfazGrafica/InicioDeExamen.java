@@ -5,7 +5,10 @@
  */
 package InterfazGrafica;
 
+import Medicos.Cardiologo;
+import Pacientes.Paciente;
 import java.awt.CardLayout;
+import javax.swing.JPanel;
 
 public class InicioDeExamen extends javax.swing.JFrame {
 
@@ -16,7 +19,6 @@ public class InicioDeExamen extends javax.swing.JFrame {
         ExamenCardiologo card = new ExamenCardiologo();
         ExamenNeumologo neu = new ExamenNeumologo();
         ExamenOftalmologo oft = new ExamenOftalmologo();
-        
         
         contenido.setSize(840,400);
         CardLayout cardLayout = new CardLayout();
@@ -78,6 +80,11 @@ public class InicioDeExamen extends javax.swing.JFrame {
 
         btnsiguiente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnsiguiente.setText("SIGUIENTE");
+        btnsiguiente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnsiguienteMouseClicked(evt);
+            }
+        });
         btnsiguiente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsiguienteActionPerformed(evt);
@@ -95,6 +102,13 @@ public class InicioDeExamen extends javax.swing.JFrame {
         CardLayout cardLayout = (CardLayout) contenido.getLayout();
         cardLayout.next(contenido); // Muestra el siguiente panel
         contenido.setSize(840,400);
+          
+        Cardiologo card = new Cardiologo();
+        ExamenCardiologo excard = new ExamenCardiologo();
+        card.setPresionSistolica(Integer.parseInt(excard.Sistolica.getText()));
+        card.setPresionDiastolica(Integer.parseInt(excard.Diastolica.getText()));
+        card.setFrecuenciaCardiaca(Integer.parseInt(excard.BPM.getText()));
+        card.setNivelTroponina(Double.parseDouble(excard.Troponina.getText()));
     }//GEN-LAST:event_btnsiguienteActionPerformed
 
     private void btnatrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnatrasActionPerformed
@@ -103,6 +117,10 @@ public class InicioDeExamen extends javax.swing.JFrame {
         cardLayout.previous(contenido); // Muestra el panel anterior
         contenido.setSize(840,400);
     }//GEN-LAST:event_btnatrasActionPerformed
+
+    private void btnsiguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnsiguienteMouseClicked
+        
+    }//GEN-LAST:event_btnsiguienteMouseClicked
 
     /**
      * @param args the command line arguments
