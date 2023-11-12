@@ -7,7 +7,9 @@ public abstract class Persona {
     protected String sexo;
     protected int edad;
     protected int DNI;
-
+    
+    public Persona(){  
+    }
     public Persona(String nombre, String sexo, int edad, int DNI) {
         this.nombre = nombre;
         this.sexo = sexo;
