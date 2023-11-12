@@ -28,8 +28,8 @@ public class ExamenInicial extends javax.swing.JPanel {
         Peso = new javax.swing.JTextField();
         S4 = new javax.swing.JLabel();
         S5 = new javax.swing.JLabel();
-        Altura1 = new javax.swing.JTextField();
-        Altura2 = new javax.swing.JTextField();
+        Altura = new javax.swing.JTextField();
+        gruposanguineo = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -67,6 +67,9 @@ public class ExamenInicial extends javax.swing.JPanel {
         Peso.setForeground(new java.awt.Color(204, 204, 204));
         Peso.setText("kg");
         Peso.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PesoMouseClicked(evt);
+            }
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 PesoMousePressed(evt);
             }
@@ -86,33 +89,33 @@ public class ExamenInicial extends javax.swing.JPanel {
         S5.setText("Grupo sanguíneo");
         add(S5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
 
-        Altura1.setForeground(new java.awt.Color(204, 204, 204));
-        Altura1.setText("metros");
-        Altura1.addMouseListener(new java.awt.event.MouseAdapter() {
+        Altura.setForeground(new java.awt.Color(204, 204, 204));
+        Altura.setText("metros");
+        Altura.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                Altura1MousePressed(evt);
+                AlturaMousePressed(evt);
             }
         });
-        Altura1.addActionListener(new java.awt.event.ActionListener() {
+        Altura.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Altura1ActionPerformed(evt);
+                AlturaActionPerformed(evt);
             }
         });
-        add(Altura1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 330, 30));
+        add(Altura, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 330, 30));
 
-        Altura2.setForeground(new java.awt.Color(204, 204, 204));
-        Altura2.setText("A B AB O");
-        Altura2.addMouseListener(new java.awt.event.MouseAdapter() {
+        gruposanguineo.setForeground(new java.awt.Color(204, 204, 204));
+        gruposanguineo.setText("A B AB O");
+        gruposanguineo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                Altura2MousePressed(evt);
+                gruposanguineoMousePressed(evt);
             }
         });
-        Altura2.addActionListener(new java.awt.event.ActionListener() {
+        gruposanguineo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Altura2ActionPerformed(evt);
+                gruposanguineoActionPerformed(evt);
             }
         });
-        add(Altura2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 330, 30));
+        add(gruposanguineo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 330, 30));
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
         jPanel1.setForeground(new java.awt.Color(0, 255, 255));
@@ -145,32 +148,36 @@ public class ExamenInicial extends javax.swing.JPanel {
         
     }//GEN-LAST:event_PesoActionPerformed
 
-    private void Altura1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Altura1MousePressed
+    private void AlturaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AlturaMousePressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Altura1MousePressed
+    }//GEN-LAST:event_AlturaMousePressed
 
-    private void Altura1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Altura1ActionPerformed
+    private void AlturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AlturaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Altura1ActionPerformed
+    }//GEN-LAST:event_AlturaActionPerformed
 
-    private void Altura2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Altura2MousePressed
+    private void gruposanguineoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gruposanguineoMousePressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Altura2MousePressed
+    }//GEN-LAST:event_gruposanguineoMousePressed
 
-    private void Altura2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Altura2ActionPerformed
+    private void gruposanguineoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gruposanguineoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Altura2ActionPerformed
+    }//GEN-LAST:event_gruposanguineoActionPerformed
+
+    private void PesoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PesoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PesoMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Alergia;
-    private javax.swing.JTextField Altura1;
-    private javax.swing.JTextField Altura2;
-    private javax.swing.JTextField Peso;
+    public javax.swing.JTextField Altura;
+    public javax.swing.JTextField Peso;
     private javax.swing.JLabel S2;
     private javax.swing.JLabel S3;
     private javax.swing.JLabel S4;
     private javax.swing.JLabel S5;
+    private javax.swing.JTextField gruposanguineo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
