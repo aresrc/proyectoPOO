@@ -3,6 +3,7 @@
 
 package Medicos;
 
+import InterfazGrafica.ExamenCardiologo;
 import InterfazGrafica.ExamenOftalmologo;
 import InterfazGrafica.ResultCardiologia;
 import InterfazGrafica.RegistroPaciente;
@@ -19,6 +20,12 @@ public class ControlCardiologo implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) { 
+ 
+        ExamenCardiologo excard = new ExamenCardiologo();
+        card.setPresionSistolica(Integer.parseInt(excard.Sistolica.getText()));
+        card.setPresionDiastolica(Integer.parseInt(excard.Diastolica.getText()));
+        card.setFrecuenciaCardiaca(Integer.parseInt(excard.BPM.getText()));
+        card.setNivelTroponina(Double.parseDouble(excard.Troponina.getText()));
         ventanaCard.CajaTextoCard.setText(card.MostrarResultados());
     }
     
@@ -28,5 +35,7 @@ public class ControlCardiologo implements ActionListener {
         this.ventanaF.Resultados.addActionListener(this);
     }
     
+    
+      
 }
 
